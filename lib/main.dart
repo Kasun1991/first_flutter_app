@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'mainview.dart';
 import 'hellodemo.dart';
+import 'appbardemo.dart';
+import 'layoutdemo.dart';
+import 'logindemo.dart';
+import 'snakbardemo.dart';
+import 'alertDialogDemo.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -8,31 +13,13 @@ void main() {
     initialRoute: '/',
     routes: {
       '/' : (context) => MainView(),
-      '/second' : (context) => HelloDemo()
+      '/helloDemo' : (context) => HelloDemo(),
+      '/appBarDemo' : (context) => AppBarDemo(),
+      '/layoutDemo' : (context) => LayoutDemo(),
+      '/loginDemo' : (context) => LoginDemo(),
+      '/snackBarDemo' : (context) => SnackBarDemo(),
+      '/alertDialogDemo' : (context) => AlertDialogDemo(),
     },
   ));
 }
-
-//class FirstRoute extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Scaffold(
-//      appBar: AppBar(
-//        title: Text('First Route'),
-//      ),
-//      body: Center(
-//        child: RaisedButton(
-//          child: Text('Open route'),
-//          onPressed: () {
-//            Navigator.push(
-//              context,
-//              MaterialPageRoute(builder: (context) => SecondRoute()),
-//            );
-//          },
-//        ),
-//      ),
-//    );
-//  }
-//}
-
 

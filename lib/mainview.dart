@@ -3,6 +3,8 @@ import 'hellodemo.dart';
 import 'appbardemo.dart';
 import 'layoutdemo.dart';
 import 'logindemo.dart';
+import 'snakbardemo.dart';
+import 'alertDialogDemo.dart';
 
 class MainView extends StatelessWidget {
   @override
@@ -17,10 +19,11 @@ class MainView extends StatelessWidget {
             RaisedButton(
               child: Text('Hello Demo'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HelloDemo()),
-                );
+//                Navigator.push(
+//                  context,
+//                  MaterialPageRoute(builder: (context) => HelloDemo()),
+//                );
+                Navigator.pushNamed(context, '/helloDemo');
               },
             ),
             RaisedButton(
@@ -30,6 +33,7 @@ class MainView extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => AppBarDemo()),
                 );
+                //Navigator.pushNamed(context, '/appBarDemo');
               },
             ),
             RaisedButton(
@@ -39,6 +43,7 @@ class MainView extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => LayoutDemo()),
                 );
+                //Navigator.pushNamed(context, '/layoutDemo');
               },
             ),
             RaisedButton(
@@ -48,6 +53,27 @@ class MainView extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => LoginDemo()),
                 );
+                //Navigator.pushNamed(context, '/loginDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('SnackBar Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SnackBarDemo()),
+                );
+                //Navigator.pushNamed(context, '/snackBarDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('Alert Dialog Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AlertDialogDemo()),
+                );
+                //Navigator.pushNamed(context, '/alertDialogDemo');
               },
             ),
           ],
