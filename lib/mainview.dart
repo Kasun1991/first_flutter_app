@@ -5,6 +5,10 @@ import 'layoutdemo.dart';
 import 'logindemo.dart';
 import 'snakbardemo.dart';
 import 'alertDialogDemo.dart';
+import 'textfieldemo.dart';
+import 'checkboxdemo.dart';
+import 'radiobuttondemo.dart';
+import 'switchdemo.dart';
 
 class MainView extends StatelessWidget {
   @override
@@ -74,6 +78,46 @@ class MainView extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => AlertDialogDemo()),
                 );
                 //Navigator.pushNamed(context, '/alertDialogDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('Text Field Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TextFieldDemo()),
+                );
+                //Navigator.pushNamed(context, '/textFieldDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('Check Box Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CheckBoxDemo()),
+                );
+                //Navigator.pushNamed(context, '/textFieldDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('Radio Button Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RadioButtonDemo()),
+                );
+                //Navigator.pushNamed(context, '/textFieldDemo');
+              },
+            ),
+            RaisedButton(
+              child: Text('Switch Demo'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SwitchDemo()),
+                );
+                //Navigator.pushNamed(context, '/textFieldDemo');
               },
             ),
           ],
