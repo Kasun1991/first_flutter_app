@@ -36,8 +36,18 @@ class _SwitchDemo extends State<SwitchDemo> {
                       onChanged: (bool value) {
                         _onChanged(value);
                       })
+
                 ],
-              )
+              ),
+              SwitchListTile(
+                title: Text('Switch List Tile'),
+                  subtitle: Text('sub title'),
+                  value: _isSelect,
+                  activeColor: Colors.red,
+                  secondary: new Icon(Icons.home),
+                  onChanged: (bool value) {
+                    _onChanged(value);
+                  })
             ],
           ),
         ),
