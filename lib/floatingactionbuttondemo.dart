@@ -30,7 +30,6 @@ class _FloatingActionButtonDemoState extends State<FloatingActionButtonDemo> {
         child: Icon(Icons.timer,color: Colors.black,),
         backgroundColor: Colors.white,
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.,
       body: Container(
         padding: EdgeInsets.all(32.0),
         child: Center(
