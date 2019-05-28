@@ -12,6 +12,8 @@ import 'switchdemo.dart';
 import 'sliderdemo.dart';
 import 'dropdowndemo.dart';
 import 'listviewdemo.dart';
+import 'drowerdemo.dart';
+import 'floatingactionbuttondemo.dart';
 
 class MainView extends StatelessWidget {
   List<String> _tutorials = new List<String>();
@@ -28,6 +30,8 @@ class MainView extends StatelessWidget {
   static const String SLIDER = "Slider Demo";
   static const String DROPDOWN = "Dropdown Demo";
   static const String LIST_VIEW = "List View Demo";
+  static const String DRAWER = "Drawer Demo";
+  static const String FLOATING_ACTION_BUTTON = "Floating Action Button Demo";
 
   List<String> _getTutorialList() {
     _tutorials.add(HELLO );
@@ -43,6 +47,8 @@ class MainView extends StatelessWidget {
     _tutorials.add(SLIDER);
     _tutorials.add(DROPDOWN);
     _tutorials.add(LIST_VIEW);
+    _tutorials.add(DRAWER);
+    _tutorials.add(FLOATING_ACTION_BUTTON);
     return _tutorials;
   }
 
@@ -147,6 +153,18 @@ class MainView extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => ListViewDemo()),
+        );
+        break;
+      case DRAWER:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => DrawerDemo()),
+        );
+        break;
+      case FLOATING_ACTION_BUTTON:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => FloatingActionButtonDemo()),
         );
         break;
     }
