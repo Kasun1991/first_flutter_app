@@ -14,6 +14,9 @@ import 'dropdowndemo.dart';
 import 'listviewdemo.dart';
 import 'drowerdemo.dart';
 import 'floatingactionbuttondemo.dart';
+import 'lifecycledemo.dart';
+import 'datetiempickerdemo.dart';
+import 'simpledialogdemo.dart';
 
 class MainView extends StatelessWidget {
   List<String> _tutorials = new List<String>();
@@ -32,6 +35,9 @@ class MainView extends StatelessWidget {
   static const String LIST_VIEW = "List View Demo";
   static const String DRAWER = "Drawer Demo";
   static const String FLOATING_ACTION_BUTTON = "Floating Action Button Demo";
+  static const String LIFE_CYCLE = "Life Cycle Demo";
+  static const String DATE_TIME_PICKER = "Date Time Picker Demo";
+  static const String SIMPLE_DIALOG = "Simple Dialog Demo";
 
   List<String> _getTutorialList() {
     _tutorials.add(HELLO );
@@ -49,6 +55,9 @@ class MainView extends StatelessWidget {
     _tutorials.add(LIST_VIEW);
     _tutorials.add(DRAWER);
     _tutorials.add(FLOATING_ACTION_BUTTON);
+    _tutorials.add(LIFE_CYCLE);
+    _tutorials.add(DATE_TIME_PICKER);
+    _tutorials.add(SIMPLE_DIALOG);
     return _tutorials;
   }
 
@@ -165,6 +174,24 @@ class MainView extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FloatingActionButtonDemo()),
+        );
+        break;
+      case LIFE_CYCLE:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => LifeCycleDemo()),
+        );
+        break;
+      case DATE_TIME_PICKER:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => DateTimePickerDemo()),
+        );
+        break;
+      case SIMPLE_DIALOG:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SimpleDialogDemo()),
         );
         break;
     }
